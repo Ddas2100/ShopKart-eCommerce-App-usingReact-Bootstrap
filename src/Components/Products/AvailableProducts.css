@@ -1,0 +1,49 @@
+.available-products {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .product-card {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    align-items: baseline;
+    
+  }
+
+  .product-button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #7a3ee9;
+    color: white;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .product-button:hover,
+  .product-button:active {
+    background-color: #5506a3;
+  }
+  

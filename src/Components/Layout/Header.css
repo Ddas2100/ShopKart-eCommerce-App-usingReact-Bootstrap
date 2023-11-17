@@ -1,0 +1,24 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 3rem;
+  background-color: rgb(237, 237, 240);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+
+
+  
+  
