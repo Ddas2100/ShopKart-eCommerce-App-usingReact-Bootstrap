@@ -1,0 +1,22 @@
+.footer-navbar .navbar-brand {
+    height: 5rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.footer-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #333; 
+}
