@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './AvailableProducts.css';
+import ProductItem from './ProductItem'; 
 
 const productsArr = [
     {
@@ -26,29 +26,20 @@ const productsArr = [
 ];
 
 const AvailableProducts = () => {
+    const productsList = productsArr.map((product) =>
+        <ProductItem
+            id={product.id} 
+            key={product.id}  
+            title={product.title} 
+            imageUrl={product.imageUrl} 
+            price={product.price}
+        />)
     return (
-        <Container >
-            <Row className="mb-4">
-            </Row>
-            <Row className="justify-content-md-center">
-                {productsArr.map((product, index) => (
-                    <Col key={index} md={6} lg={6} xl={6} className="mb-4">
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Body>
-                                <Card.Title>{product.title}</Card.Title>
-                                <div className="zoom-effect">
-                                    <Card.Img variant="top" src={product.imageUrl} />
-                                </div>
-                                <Card.Text>
-                                    ${product.price}
-                                    <Button variant="success" className='m-3'>Add to Cart</Button>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <section className='products'>
+            <ul>
+                {productsList}
+            </ul>
+        </section>
     );
 };
 

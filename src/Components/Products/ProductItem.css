@@ -1,0 +1,44 @@
+/* ProductItem.css */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #4710af;
+  font-size: 1.25rem;
+}
+
+.zoom-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-effect:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive styles for two products per row */
+@media (min-width: 768px) {
+  .product {
+    width: 48%; /* Set width to fit two products per row with a small gap */
+    margin-right: 4%; /* Add a small gap between products */
+  }
+
+  /* Clear the margin on every 2nd product to start a new row */
+  .product:nth-child(2n) {
+    margin-right: 0;
+  }
+}

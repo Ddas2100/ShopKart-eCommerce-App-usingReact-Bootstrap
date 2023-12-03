@@ -1,14 +1,16 @@
 import React from 'react';
 import CartIcon from '../Cart/CartIcon';
-import { Button } from 'react-bootstrap';
+import './HeaderCartButton.css';
 
-const HeaderCartIcon = () => {
+const HeaderCartIcon = (props) => {
     return (
-        <>
-            <Button variant="outline-light">
-                <CartIcon /> Cart <span>0</span>
-            </Button>
-        </>
+        <button className='button' onClick={props.onClick}>
+            <span className='icon'>
+                <CartIcon />
+            </span>
+            <span>My Cart</span>
+            <span className='badge'>3</span>
+        </button>
     );
 };
 

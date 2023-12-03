@@ -8,3 +8,31 @@
     transform: scale(2.0); 
     transition: transform 0.3s ease-in-out;
 }
+
+.products {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: products-appear 1s ease-out forwards;
+  }
+  
+  .products ul {
+    flex: 0 0 48%; /* Set the initial width of each product item */
+    margin-bottom: 2rem; /* Add some space between rows */
+    box-sizing: border-box;
+  }
+  
+  @keyframes products-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

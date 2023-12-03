@@ -1,9 +1,8 @@
 import React from 'react';
 import './HeaderNav.css';
 import { Nav, Navbar, Container } from 'react-bootstrap';
-import HeaderCartIcon from './HeaderCartIcon';
 
-const HeaderNav = () => {
+const HeaderNav = (props) => {
     return (
         <>
             <Navbar bg='dark' expand='lg' variant='dark'>
@@ -18,13 +17,6 @@ const HeaderNav = () => {
                             <Nav.Link href='/about'>ABOUT</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                    <HeaderCartIcon />
-                </Container>
-            </Navbar>
-
-            <Navbar bg='light' variant='light' className='second-navbar'>
-                <Container>
-                    <Navbar.Brand className='mx-auto'>ShopKart</Navbar.Brand>
                 </Container>
             </Navbar>
         </>
