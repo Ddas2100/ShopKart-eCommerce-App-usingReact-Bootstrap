@@ -3,6 +3,7 @@ import Header from './Components/Layout/Header';
 import AvailableProducts from './Components/Products/AvailableProducts';
 import FooterNav from './Components/Layout/FooterNav';
 import Cart from './Components/Cart/Cart';
+import CartProvider from './Store/CartProvider';
 
 const App = () => {
 
@@ -17,14 +18,14 @@ const App = () => {
   };
 
   return (
-    <React.Fragment>
+    <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler}/>}
       <Header onShowCart= {showCartHandler} />
       <main>
         <AvailableProducts />
       </main>
       <FooterNav />
-    </React.Fragment>
+    </CartProvider>
   );
 }
 
