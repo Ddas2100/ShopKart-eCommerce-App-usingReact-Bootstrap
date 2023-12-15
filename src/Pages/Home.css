@@ -1,0 +1,10 @@
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.home-page {
+    position: relative;
+    height: 60%;
+    width: 100%;
+}

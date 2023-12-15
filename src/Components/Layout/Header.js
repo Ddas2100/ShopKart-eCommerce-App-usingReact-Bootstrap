@@ -8,10 +8,10 @@ const Header = (props) => {
 
     return(
         <React.Fragment>
-            <div>
+            <header className='header'>
                 <HeaderNav/>
                 <HeaderCartIcon onClick={props.onShowCart} /> 
-            </div>
+            </header>
             <SecondHeader />
             
         </React.Fragment>

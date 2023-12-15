@@ -1,0 +1,31 @@
+.about {
+    padding: 1rem;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    position: relative; 
+}
+
+.left-image, .right-image {
+    position: absolute;
+    top: 0;
+    height: 45%;
+    width: 18rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.left-image {
+    left: -20rem; 
+}
+
+.right-image {
+    right: -20rem; 
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

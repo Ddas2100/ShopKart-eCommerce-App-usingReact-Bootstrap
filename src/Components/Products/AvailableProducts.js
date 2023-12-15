@@ -35,11 +35,14 @@ const AvailableProducts = () => {
             price={product.price}
         />)
     return (
+        <React.Fragment>
+        <h3 className='h3'>Products</h3>
         <section className='products'>
             <ul>
                 {productsList}
             </ul>
         </section>
+        </React.Fragment>
     );
 };
 
