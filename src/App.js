@@ -8,14 +8,17 @@ import CartProvider from './Store/CartProvider';
 import AboutUs from './Pages/AboutUs';
 import RootLayout from './Pages/Root';
 import Home from './Pages/Home';
+import ContactUs from './Pages/ContactUs';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     children: [
-      { path: '/about-us', element: <AboutUs /> },
-      { path: '/home', element: <Home /> }
+      { path: '/about-us', element: <div> <AboutUs /> <FooterNav /> </div> },
+      { path: '/home', element: <div> <Home /> <FooterNav /> </div> },
+      { path: '/', element: <div> <AvailableProducts /> <FooterNav/> </div>},
+      { path: '/contact-us', element: <div> <ContactUs /> <FooterNav /> </div> }
     ],
   }
 ]);
@@ -32,16 +35,16 @@ const App = () => {
   };
 
   return (
+    <RouterProvider router={router}>
     <CartProvider>
-      <RouterProvider router={router}>
-        {cartIsShown && <Cart onClose={hideCartHandler} />}
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
         <Header onShowCart={showCartHandler} />
         <main>
           <AvailableProducts />
         </main>
         <FooterNav />
-      </RouterProvider>
     </CartProvider>
+    </RouterProvider>
   );
 };
 

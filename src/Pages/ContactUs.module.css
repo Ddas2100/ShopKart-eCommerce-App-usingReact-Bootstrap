@@ -1,0 +1,81 @@
+.center {
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+
+.center button {
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.details {
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    margin-bottom: 3rem;
+}
+
+.control {
+    margin-left: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+  }
+  
+  .control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  .control input,
+  .control textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  .control input:focus,
+  .control textarea:focus {
+    outline: none;
+    border-color: #230052;
+  }
+
+  .control.error input,
+  .control.error textarea {
+    border-color: red;
+  }
+
+.button3 {
+    width: 6rem;
+    cursor: pointer;
+    border: black;
+    border-radius: 1px;
+    background-color: brown;
+    color: white;
+    margin-top: 1.5px;
+    margin-left: 3rem;
+    padding: 0.75rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button3:hover,
+.button3:active {
+    background-color: #581e1e;
+}

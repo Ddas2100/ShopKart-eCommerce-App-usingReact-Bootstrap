@@ -1,6 +1,5 @@
 // import { Link } from 'react-router-dom';
 import './AboutUs.css';
-import FooterNav from '../Components/Layout/FooterNav';
 import Aboutus1 from '../Assets/Aboutus1.jpg';
 import Aboutus2 from '../Assets/Aboutus2.avif';
 
@@ -47,7 +46,6 @@ function AboutUs() {
             Join us on this exciting journey as we reshape the e-commerce industry. Together, we can create a fair and thriving marketplace that benefits everyone. Visit our website today to discover the Shopkart difference.
           </p>
         </div>
-        <FooterNav />
     </>
   );
 }

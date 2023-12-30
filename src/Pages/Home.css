@@ -4,7 +4,75 @@
 }
 
 .home-page {
-    position: relative;
-    height: 60%;
-    width: 100%;
+  width: 82rem; 
+  height: 25rem;     
+  display: block;  
+  margin: auto;
 }
+
+.row {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  justify-content: space-around
+  }
+  .col {
+  margin: 0 5px; 
+  width: 20%;
+  }
+
+.button-container {
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 0.5rem;
+}
+
+/* .h5 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 2px;
+  font-size: small;
+  font-weight: bold;
+} */
+
+.button2 {
+  width: 6rem;
+  cursor: pointer;
+  border: black;
+  border-radius: 1px;
+  background-color: brown;
+  color: white;
+  margin-top: 1.5px;
+  margin-left: 3rem;
+  padding: 0.75rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: wavy;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button2:hover,
+.button2:active {
+  background-color: #581e1e;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background: rgb(253, 217, 151);
+  padding: 1rem;
+  font-size: small;
+}
+
+.logo2 {
+  width: 50px;  
+  margin-bottom: 1px; 
+  }

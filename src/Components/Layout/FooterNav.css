@@ -20,3 +20,18 @@
     margin-right: 10px;
     color: #333; 
 }
+
+.special-button2 {
+    color: rgb(2, 2, 2);
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: x-small;
+  }
+  
+  .special-button:hover,
+  .special-button:active {
+    color: blue;
+    text-decoration: underline;
+  }
